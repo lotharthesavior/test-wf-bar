@@ -1,0 +1,102 @@
+.wf-bar {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: gray;
+  list-style-type: none;
+  font-family: sans-serif;
+}
+.wf-bar .wf-bar-item {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+.wf-bar .wf-bar-item:not(:first-child)::before {
+  content: "";
+  display: block;
+  width: 50px;
+  max-width: 50px;
+  min-width: 50px;
+  height: 4px;
+  background-color: #d9d7d7;
+  margin: auto;
+  margin-left: 15px;
+  margin-right: 25px;
+  margin-top: 13px;
+}
+.wf-bar .wf-bar-item:first-child .wf-icon {
+  padding: 10px;
+}
+.wf-bar .wf-bar-item:nth-child(3) .wf-icon {
+  background-color: #dfdf3a;
+}
+.wf-bar .wf-bar-item:nth-child(4) .wf-icon {
+  background-color: #76c05a;
+}
+.wf-bar .wf-bar-item .wf-icon {
+  border-radius: 28px;
+  width: 20px;
+  max-width: 20px;
+  min-width: 20px;
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  line-height: 6px;
+  text-align: center;
+  font-size: 20px;
+  background: gray;
+  color: #fff;
+  padding: 6px;
+  display: flex;
+}
+.wf-bar .wf-bar-item .wf-icon::before {
+  padding: auto;
+  padding-top: 6px;
+  padding-left: 1px;
+}
+.wf-bar .wf-bar-item .wf-icon.fa-angle-double-up::before {
+  padding: auto;
+  padding-top: 6px;
+  padding-left: 4px;
+}
+.wf-bar .wf-bar-item .wf-icon.fa-angle-double-right::before {
+  padding: auto;
+  padding-top: 6px;
+  padding-left: 5px;
+}
+.wf-bar .wf-bar-item .wf-icon.fa-clipboard::before {
+  font-size: 15px;
+  padding: auto;
+  padding-left: 4px;
+}
+.wf-bar .wf-bar-item .wf-icon.fa-check::before {
+  font-size: 15px;
+  padding: auto;
+  padding-left: 3px;
+  padding-top: 7px;
+}
+.wf-bar .wf-bar-item .wf-info-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-height: 32px;
+}
+.wf-bar .wf-bar-item .wf-info-container .wf-info-container-content {
+  display: flex;
+  flex-direction: column;
+}
+.wf-bar .wf-bar-item .wf-info-container .wf-info-container-content .wf-item-label {
+  font-size: 11px;
+  color: #aaa6a6;
+  min-width: 80px;
+}
+.wf-bar .wf-bar-item .wf-info-container .wf-info-container-content .wf-item-info {
+  font-size: 16px;
+  font-weight: 200;
+  padding-top: 2px;
+}
+
+/*# sourceMappingURL=styles.css.map */
